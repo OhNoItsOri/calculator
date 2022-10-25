@@ -10,25 +10,36 @@
 <body>
     <h1>placeholder for input screen</h1>
     <div id="container">
-        <div class="numContainer">
-            <button id="numOne">1</button>
-            <button id="numTwo">2</button>
-            <button id="numThree">3</button>
-            <button id="numFour">4</button>
-            <button id="numFive">5</button>
-            <button id="numSix">6</button>
-            <button id="numSeven">7</button>
-            <button id="numEight">8</button>
-            <button id="numNine">9</button>
-            <button id="numZero">0</button>
+        <div id="clearContainer">
+            <button id="clear">Clear</butto>
         </div>
-        <div class="opContainer">
+        <div class="numContainer"> <!--Divs for rows and columns-->
+            <div class="rowOne">
+                <button id="numOne">1</button>
+                <button id="numTwo">2</button>
+                <button id="numThree">3</button>
+            </div>
+            <div class="rowTwo">
+                <button id="numFour">4</button>
+                <button id="numFive">5</button>
+                <button id="numSix">6</button>
+            </div>
+            <div class="rowThree">
+                <button id="numSeven">7</button>
+                <button id="numEight">8</button>
+                <button id="numNine">9</button>
+            </div>
+            <div class="rowFour">
+                <button id="numZero">0</button>
+                <button id="numDecimal">.</button>
+                <button id="numNegative">-</button>
+            </div>
+        </div>
+        <div class="opContainer"> <!-- Place on the side with Flexbox vs Num-->
             <button id="opAdd">+</button>
             <button id="opSub">-</button>
             <button id="opMult">*</button>
             <button id="opDiv">/</button>
-        </div>
-        <div class="equalContainer">
             <button id="opEqual">=</button>
         </div>
     </div>
