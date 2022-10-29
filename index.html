@@ -4,46 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
-    <h1>placeholder for input screen</h1>
-    <div id="container">
-        <div id="clearContainer">
-            <button id="clear">Clear</butto>
-        </div>
-        <div class="numContainer"> <!--Divs for rows and columns-->
-            <div class="rowOne">
-                <button id="numOne">1</button>
-                <button id="numTwo">2</button>
-                <button id="numThree">3</button>
-            </div>
-            <div class="rowTwo">
-                <button id="numFour">4</button>
-                <button id="numFive">5</button>
-                <button id="numSix">6</button>
-            </div>
-            <div class="rowThree">
-                <button id="numSeven">7</button>
-                <button id="numEight">8</button>
-                <button id="numNine">9</button>
-            </div>
-            <div class="rowFour">
-                <button id="numZero">0</button>
-                <button id="numDecimal">.</button>
-                <button id="numNegative">-</button>
-            </div>
-        </div>
-        <div class="opContainer"> <!-- Place on the side with Flexbox vs Num-->
-            <button id="opAdd">+</button>
-            <button id="opSub">-</button>
-            <button id="opMult">*</button>
-            <button id="opDiv">/</button>
-            <button id="opEqual">=</button>
-        </div>
+    <div class="calculator-grid">
+        <button class="btn btn-outline-primary number">7</button>
+        <button class="btn btn-outline-primary number">8</button>
+        <button class="btn btn-outline-primary number">9</button>
+        <button class="btn btn-outline-secondary operator backspace">C</button>
+        <button class="btn btn-outline-secondary operator clear">AC</button>
+        <button class="btn btn-outline-primary number">4</button>
+        <button class="btn btn-outline-primary number">5</button>
+        <button class="btn btn-outline-primary number">6</button>
+        <button class="btn btn-outline-secondary operator">x</button>
+        <button class="btn btn-outline-secondary operator">/</button>
+        <button class="btn btn-outline-primary number">1</button>
+        <button class="btn btn-outline-primary number">2</button>
+        <button class="btn btn-outline-primary number">3</button>
+        <button class="btn btn-outline-secondary operator">+</button>
+        <button class="btn btn-outline-secondary operator">-</button>
+        <button class="btn btn-outline-secondary operator decimal">.</button>
+        <button class="btn btn-outline-primary number">0</button>
+        <button class="btn btn-outline-secondary operator">(+)</button>
+        <button class="btn btn-outline-tertiary large-btn equal">=</button>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>

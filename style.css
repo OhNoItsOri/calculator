@@ -1,7 +1,52 @@
-/* I HATE IT HERE */
 
-#container {
-    border: 1px solid black;
-};
+/* use https://github.com/rhiannonthompson/calculator/blob/main/styles.css for reference
+*/
 
+body {
+    background: lightgrey;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(4, 50px);
+    min-height: 100vh;
+}
+
+.large-btn {
+    grid-column: span 2;
+}
+
+.btn {
+    border-radius: 6px;
+    background: lightgrey;
+}
+
+.btn-outline-primary {
+    background: whitesmoke;
+    border-color: lightblue;
+}
+
+.btn-outline-primary:hover {
+    background: lightblue;
+}
+
+.btn-outline-secondary{
+    background: whitesmoke;
+    border-color: lightgoldenrodyellow;
+}
+
+.btn-outline-secondary:hover {
+    background: lightgoldenrodyellow;
+}
+
+.btn-outline-tertiary{
+    border-color: lightcoral;
+}
+
+.btn-outline-tertiary:hover{
+    background: lightcoral;
+}
 

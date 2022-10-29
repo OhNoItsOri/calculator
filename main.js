@@ -1,39 +1,26 @@
-// PAIN
+let currentValue = "";
 
-var numOne = 3; // replace with input
-var numTwo = 3; // replace with input
-let operators = ["+", "-", "*","/"];
+document.addEventListener("DOMContentLoaded", function(){
+    //stores all numbers in JS
+    let clear = document.querySelector(".clear");
+    let equal = document.querySelector(".equal");
+    let decimal = document.querySelector(".decimal");
 
-const container = document.getElementById("container");
+    let numbers = document.querySelectorAll(".number");
+    let operators = document.querySelectorAll(".operator");
 
-function addition(a,b){
-    return a + b;
+    // make a previous screen thing. yaaaaaaa also a display
+
+    numbers.forEach((number) => number.addEventListener("click", function(e){
+        handleNumber(e.target.textContent)
+        currentScreen.textContent = currentValue;
+    }))
+});
+
+function handleNumber(num){
+    currentValue += number;
+    console.log(num);
 }
 
-function subtraction(a,b){
-    return a - b;
-}
 
-function multiplication(a,b){
-    return a * b;
-}
-
-function division(a,b){
-    return a / b;
-}
-
-/*
-Create a new function operate that takes an operator and 2 numbers and then calls
-one of the above functions on the numbers. Create a basic HTML calculator with buttons
-for each digit, each of the above functions and an “Equals” key. Do not worry about wiring 
-up the JS just yet. There should also be a display for the calculator. Go ahead and fill it
- with some dummy numbers so it looks correct. Add a “clear” button.
-*/
-
-function operate(a,b){
-    // takes an operator and 2 numbers and then calls one of the above functions on the numbers.
-    const choice = operators[Math.floor(Math.random() * operators.length)];
-    return a + choice + b;
-}
-
-console.log(eval(operate(numOne,numTwo)));
+// https://www.youtube.com/watch?v=Kyxvms8pnSU
